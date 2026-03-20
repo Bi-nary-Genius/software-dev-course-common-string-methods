@@ -67,25 +67,43 @@ Complete the following tasks and assign the results to the specified variables. 
 
 //Starter Code
 let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
+let hasJavaScript;
+hasJavaScript = inputString.includes("JavaScript");
 
 // 1. Searching
-let hasJavaScript; // Your code here
-let codingPosition; // Your code here
-let startsWithWelcome; // Your code here
-let endsWithToday; // Your code here
+let codingPosition;
+codingPosition = inputString.indexOf("Coding");
+
+let startsWithWelcome; 
+startsWithWelcome = inputString.startsWith("Welcome");
+
+let endsWithToday; 
+endsWithToday = inputString.endsWith("today");
+
 
 // 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
-let replacedString; // Your code here
+// let lowercaseString; 
+lowercaseString = inputString.toLowerCase();
+
+// let uppercaseString; 
+uppercaseString = inputString.toUpperCase();
+
+// let trimmedString; 
+trimmedString = inputString.trim();
+
+// let replacedString; 
+replacedString = inputString.replace("JavaScript", "coding");
 
 // 3. Breaking Apart
-let wordsArray; // Your code here
+let wordsArray; 
+wordsArray = inputString.split(" ");
 
 // 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+let firstCharacter; 
+firstCharacter = trimmedString.charAt(0);
+
+let extractedBootcamp; 
+extractedBootcamp = trimmedString.slice(20, 28);
 
 // Log all results
 console.log({
